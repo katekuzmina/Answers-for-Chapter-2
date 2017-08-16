@@ -224,4 +224,5 @@ translate['dog']
     ----> 1 translate['dog']
     KeyError: 'dog'
 
-The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
+#The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
+```
