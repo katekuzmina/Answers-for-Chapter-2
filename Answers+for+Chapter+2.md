@@ -99,34 +99,18 @@ Read in the texts of the State of the Union addresses, using the state_union cor
 
 ```python
 from nltk.corpus import state_union
-```
-
-
-```python
 state_union.fileids()
-```
-
-
-
-
     [u'1945-Truman.txt',
      u'1946-Truman.txt',
      u'1947-Truman.txt',
      u'1948-Truman.txt',
      u'1949-Truman.txt']
-
-
-
-
-```python
 cfd = nltk.ConditionalFreqDist(
         (target, fileid[:4])
         for fileid in state_union()
         for w in state_union.words(fileid)
         for target in ['men', 'women', 'people']
         if w.lower().startswith(target))
-```
-
 
     ---------------------------------------------------------------------------
 
@@ -141,7 +125,7 @@ cfd = nltk.ConditionalFreqDist(
 
 
     TypeError: 'PlaintextCorpusReader' object is not callable
-
+```
 
 ## _Question 5_
 
