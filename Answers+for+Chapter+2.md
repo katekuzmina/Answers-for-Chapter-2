@@ -11,35 +11,23 @@ Create a variable phrase containing a list of words. Review the operations descr
 phrase = ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house']
 ```
 
-
 ```python
 phrase_add = phrase + ['!']
 ```
-
 
 ```python
 phrase_add 
 ```
 
-
-
-
     ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house', '!']
-
-
-
 
 ```python
 phrase_mul = phrase*2
 ```
 
-
 ```python
 phrase_mul
 ```
-
-
-
 
     ['The',
      'ended',
@@ -56,31 +44,16 @@ phrase_mul
      'a',
      'house']
 
-
-
-
 ```python
 phrase_ind = phrase[3]
 ```
-
-
 ```python
 phrase_ind
 ```
-
-
-
-
     'shines'
-
-
-
-
 ```python
 pharse_sli = phrase[:-2]
 ```
-
-
 ```python
 pharse_sli 
 ```
