@@ -171,7 +171,6 @@ wn.synsets("man")
      Synset('world.n.08'),
      Synset('man.v.01'),
      Synset('man.v.02')]
-
 wn.synset('homo.n.02').part_meronyms()
     [Synset('arm.n.01'),
      Synset('body_hair.n.01'),
