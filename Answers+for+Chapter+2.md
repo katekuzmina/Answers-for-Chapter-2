@@ -68,28 +68,9 @@ Use the Brown corpus reader nltk.corpus.brown.words() or the Web text corpus rea
 
 ```python
 from nltk.corpus import brown
-```
-
-
-```python
 brown.words()
-```
-
-
-
-
     [u'The', u'Fulton', u'County', u'Grand', u'Jury', ...]
-
-
-
-
-```python
 brown.categories()
-```
-
-
-
-
     [u'adventure',
      u'belles_lettres',
      u'editorial',
@@ -105,24 +86,11 @@ brown.categories()
      u'reviews',
      u'romance',
      u'science_fiction']
-
-
-
-
-```python
 print brown.sents(categories ='adventure')[2:3]
-```
-
     [[u'He', u'certainly', u"didn't", u'want', u'a', u'wife', u'who', u'was', u'fickle', u'as', u'Ann', u'.']]
-
-
-
-```python
 print brown.sents(categories = 'romance')[2:3]
-```
-
     [[u'The', u'Old', u'Man', u'was', u'unimportant', u'.']]
-
+```
 
 ## _Question 4_
 
@@ -182,40 +150,11 @@ Investigate the holonym-meronym relations for some nouns. Remember that there ar
 
 ```python
 from nltk.corpus import wordnet as wn
-```
-
-
-```python
 wn.synsets("computer")
-```
-
-
-
-
     [Synset('computer.n.01'), Synset('calculator.n.01')]
-
-
-
-
-```python
 len(wn.synsets("computer"))
-```
-
-
-
-
     2
-
-
-
-
-```python
 wn.synset('computer.n.01').part_meronyms() #components of items
-```
-
-
-
-
     [Synset('busbar.n.01'),
      Synset('cathode-ray_tube.n.01'),
      Synset('central_processing_unit.n.01'),
@@ -230,41 +169,11 @@ wn.synset('computer.n.01').part_meronyms() #components of items
      Synset('memory.n.04'),
      Synset('monitor.n.04'),
      Synset('peripheral.n.01')]
-
-
-
-
-```python
 wn.synset('computer.n.01').substance_meronyms() #components of items
-```
-
-
-
-
     []
-
-
-
-
-```python
 wn.synset('computer.n.01').member_holonyms() #things in which items are contained
-```
-
-
-
-
     []
-
-
-
-
-```python
 wn.synsets("man")
-```
-
-
-
-
     [Synset('man.n.01'),
      Synset('serviceman.n.01'),
      Synset('man.n.03'),
@@ -279,16 +188,7 @@ wn.synsets("man")
      Synset('man.v.01'),
      Synset('man.v.02')]
 
-
-
-
-```python
 wn.synset('homo.n.02').part_meronyms()
-```
-
-
-
-
     [Synset('arm.n.01'),
      Synset('body_hair.n.01'),
      Synset('face.n.01'),
@@ -298,31 +198,11 @@ wn.synset('homo.n.02').part_meronyms()
      Synset('human_head.n.01'),
      Synset('loin.n.02'),
      Synset('mane.n.02')]
-
-
-
-
-```python
 wn.synset('homo.n.02').substance_meronyms()
-```
-
-
-
-
     []
-
-
-
-
-```python
 wn.synset('homo.n.02').member_holonyms()
-```
-
-
-
-
     [Synset('genus_homo.n.01')]
-
+```
 
 
 ## _Question 6_
