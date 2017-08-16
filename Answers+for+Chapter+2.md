@@ -35,7 +35,6 @@ pharse_sli = phrase[:-2]
 pharse_sli 
     ['The', 'ended', 'beginner', 'shines', 'before']
 phrase_sort = sorted(w.lower() for w in phrase)
-
 phrase_sort
     ['a', 'before', 'beginner', 'ended', 'house', 'shines', 'the']
 ```
@@ -47,62 +46,20 @@ Use the corpus module to explore austen-persuasion.txt. How many word tokens doe
 
 ```python
 import nltk
-```
-
-
-```python
 from nltk.corpus import gutenberg
-```
-
-
-```python
 gutenberg.fileids()[:5]
-```
-
-
-
-
     [u'austen-emma.txt',
      u'austen-persuasion.txt',
      u'austen-sense.txt',
      u'bible-kjv.txt',
      u'blake-poems.txt']
-
-
-
-
-```python
 persuasion_tokens = gutenberg.words('austen-emma.txt')
-```
-
-
-```python
 len(persuasion_tokens)
-```
-
-
-
-
     192427
-
-
-
-
-```python
 persuasion_wt = sorted(set(w.lower() for w in persuasion_tokens))
-```
-
-
-```python
 len(persuasion_wt)
-```
-
-
-
-
     7344
-
-
+```
 
 ## _Question 3_
 
