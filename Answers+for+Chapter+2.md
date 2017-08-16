@@ -9,19 +9,13 @@ Create a variable phrase containing a list of words. Review the operations descr
 
 ```python
 phrase = ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house']
-```
-
-```python
 phrase_add = phrase + ['!']
 ```
 
 ```python
 phrase_add 
-```
-
     ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house', '!']
 
-```python
 phrase_mul = phrase*2
 ```
 
