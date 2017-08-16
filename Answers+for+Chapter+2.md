@@ -8,7 +8,7 @@ Create a variable phrase containing a list of words. Review the operations descr
 
 
 ```python
-phrase = ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house']
+>>> phrase = ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house']
 phrase_add = phrase + ['!']
 phrase_add 
     ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house', '!']
