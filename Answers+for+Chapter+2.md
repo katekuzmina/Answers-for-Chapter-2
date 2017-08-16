@@ -8,12 +8,12 @@ Create a variable phrase containing a list of words. Review the operations descr
 
 
 ```python
->>> phrase = ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house']
->>> phrase_add = phrase + ['!']
->>> phrase_add 
+phrase = ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house']
+phrase_add = phrase + ['!']
+phrase_add 
     ['The', 'ended', 'beginner', 'shines', 'before', 'a', 'house', '!']
->>> phrase_mul = phrase*2
->>> phrase_mul
+phrase_mul = phrase*2
+phrase_mul
     ['The',
      'ended',
      'beginner',
@@ -28,16 +28,17 @@ Create a variable phrase containing a list of words. Review the operations descr
      'before',
      'a',
      'house']
->>> phrase_ind = phrase[3]
->>> phrase_ind
+phrase_ind = phrase[3]
+phrase_ind
     'shines'
->>> pharse_sli = phrase[:-2]
->>> pharse_sli 
+pharse_sli = phrase[:-2]
+pharse_sli 
     ['The', 'ended', 'beginner', 'shines', 'before']
->>> phrase_sort = sorted(w.lower() for w in phrase)
+phrase_sort = sorted(w.lower() for w in phrase)
 
->>> phrase_sort
+phrase_sort
     ['a', 'before', 'beginner', 'ended', 'house', 'shines', 'the']
+```
 
 ## _Question 2_
 
