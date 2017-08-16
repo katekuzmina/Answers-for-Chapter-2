@@ -212,45 +212,16 @@ In the discussion of comparative wordlists, we created an object called translat
 
 ```python
 from nltk.corpus import swadesh
-```
-
-
-```python
 fr2en = swadesh.entries(['fr', 'en'])
-```
-
-
-```python
 translate = dict(fr2en)
-```
-
-
-```python
 translate['chien']
-```
-
-
-
-
     u'dog'
-
-
-
-
-```python
 translate['dog']
-```
-
-
     ---------------------------------------------------------------------------
-
     KeyError                                  Traceback (most recent call last)
 
     <ipython-input-56-f436b93cc2da> in <module>()
     ----> 1 translate['dog']
-    
-
     KeyError: 'dog'
-
 
 The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
