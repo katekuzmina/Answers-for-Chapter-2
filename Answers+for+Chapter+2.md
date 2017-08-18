@@ -215,20 +215,28 @@ According to Strunk and White's Elements of Style, the word however, used at the
 ```python
 from nltk.corpus import gutenberg
 nltk.corpus.gutenberg.fileids()
-text = nltk.Text(gutenberg.words('whitman-leaves.txt'))
+text = nltk.Text(gutenberg.words('carroll-alice.txt'))
 text.concordance("however")
-Displaying 12 of 12 matches:
-like One including and over all , ( However high the head of any else that head
- . Allons ! we must not stop here , However sweet these laid - up stores , howe
-ever sweet these laid - up stores , however convenient this dwelling we cannot 
-is dwelling we cannot remain here , However shelter ' d this port and however c
-, However shelter ' d this port and however calm these waters we must not ancho
-se waters we must not anchor here , However welcome the hospitality that surrou
-and pass it , To conceive no time , however distant , but what you may reach it
-ut it stretches and waits for you , however long but it stretches and waits for
- , planets , All distances of place however wide , All distances of time , all 
-hou wouldst not really sell thyself however great the price , In that thou sure
-im recesses , Acknowledging rapport however far remov ' d , ( As some old root 
-n to its divine source and origin , however distant , Latent the same in subjec
-
-
+Displaying 20 of 20 matches:
+ate it would not open any of them . However , on the second time round , she ca
+sagree with you , sooner or later . However , this bottle was NOT marked ' pois
+r into that lovely garden . First , however , she waited for a few minutes to s
+ never get to twenty at that rate ! However , the Multiplication Table doesn ' 
+nd behind them a railway station .) However , she soon made out that she was in
+ILL be a queer thing , to be sure ! However , everything is queer to - day .' J
+sy to know when the race was over . However , when they had been running half a
+ and had to be patted on the back . However , it was over at last , and they sa
+ow - spirited . In a little while , however , she again heard a little patterin
+nd this a very difficult question . However , at last she stretched her arms ro
+o be , from one minute to another ! However , I ' ve got back to my right size 
+ow whether it would like the name : however , it only grinned a little wider . 
+n ' t think that proved it at all ; however , she went on ' And how do you know
+ !' said the Dormouse indignantly . However , he consented to go on . ' And so 
+ , tumbling up against each other ; however , they got settled down in a minute
+k of it at all ,' said the King : ' however , it may kiss my hand if it likes .
+t was an uncomfortably sharp chin . However , she did not like to be rude , so 
+e , and were resting in the shade : however , the moment they saw her , they hu
+ght as well be at school at once .' However , she got up , and began to repeat 
+age knew the meaning of it at all . However , ' jury - men ' would have done ju
+```
+From this analysis, we can see that Lewis Carroll often used "however" in the sentence-initial position that might be considered innovative and unique for a book written in 1865. 
