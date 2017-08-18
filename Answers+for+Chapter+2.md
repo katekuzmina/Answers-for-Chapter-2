@@ -38,11 +38,9 @@ phrase_sort = sorted(w.lower() for w in phrase)
 phrase_sort
     ['a', 'before', 'beginner', 'ended', 'house', 'shines', 'the']
 ```
-
 ## _Question 2_
 
 Use the corpus module to explore austen-persuasion.txt. How many word tokens does this book have? How many word types?
-
 
 ```python
 import nltk
@@ -126,7 +124,6 @@ cfd = nltk.ConditionalFreqDist(
 
     TypeError: 'PlaintextCorpusReader' object is not callable
 ```
-
 ## _Question 5_
 
 Investigate the holonym-meronym relations for some nouns. Remember that there are three kinds of holonym-meronym relation, so you need to use: member_meronyms(), part_meronyms(), substance_meronyms(), member_holonyms(), part_holonyms(), and substance_holonyms().
@@ -186,7 +183,6 @@ wn.synset('homo.n.02').substance_meronyms()
 wn.synset('homo.n.02').member_holonyms()
     [Synset('genus_homo.n.01')]
 ```
-
 ## _Question 6_
 
 In the discussion of comparative wordlists, we created an object called translate which you could look up using words in both German and Spanish in order to get corresponding words in English. What problem might arise with this approach? Can you suggest a way to avoid this problem?
@@ -204,9 +200,8 @@ translate['dog']
     <ipython-input-56-f436b93cc2da> in <module>()
     ----> 1 translate['dog']
     KeyError: 'dog'
-
-#The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
 ```
+__ANSWER__:The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
 
 ## _Question 7_
 
@@ -239,4 +234,4 @@ e , and were resting in the shade : however , the moment they saw her , they hu
 ght as well be at school at once .' However , she got up , and began to repeat 
 age knew the meaning of it at all . However , ' jury - men ' would have done ju
 ```
-From this analysis, we can see that Lewis Carroll often used "however" in the sentence-initial position that might be considered innovative and unique for a book written in 1865. 
+__ANSWER__:From this analysis, we can see that Lewis Carroll often used "however" in the sentence-initial position that might be considered innovative and unique for a book written in 1865. 
