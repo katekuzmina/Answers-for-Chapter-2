@@ -1,5 +1,5 @@
 
-# _Natural Language Processing with Python_ 
+# Natural Language Processing with Python 
 ## Answers for Chapter 2 
 
 ## _Question 1_
@@ -187,11 +187,9 @@ wn.synset('homo.n.02').member_holonyms()
     [Synset('genus_homo.n.01')]
 ```
 
-
 ## _Question 6_
 
 In the discussion of comparative wordlists, we created an object called translate which you could look up using words in both German and Spanish in order to get corresponding words in English. What problem might arise with this approach? Can you suggest a way to avoid this problem?
-
 
 ```python
 from nltk.corpus import swadesh
@@ -209,3 +207,28 @@ translate['dog']
 
 #The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
 ```
+
+## _Question 7_
+
+According to Strunk and White's Elements of Style, the word however, used at the start of a sentence, means "in whatever way" or "to whatever extent", and not "nevertheless". They give this example of correct usage: However you advise him, he will probably do as he thinks best. (http://www.bartleby.com/141/strunk3.html) Use the concordance tool to study actual usage of this word in the various texts we have been considering. See also the LanguageLog posting "Fossilized prejudices about 'however'" at http://itre.cis.upenn.edu/~myl/languagelog/archives/001913.html
+
+```python
+from nltk.corpus import gutenberg
+nltk.corpus.gutenberg.fileids()
+text = nltk.Text(gutenberg.words('whitman-leaves.txt'))
+text.concordance("however")
+Displaying 12 of 12 matches:
+like One including and over all , ( However high the head of any else that head
+ . Allons ! we must not stop here , However sweet these laid - up stores , howe
+ever sweet these laid - up stores , however convenient this dwelling we cannot 
+is dwelling we cannot remain here , However shelter ' d this port and however c
+, However shelter ' d this port and however calm these waters we must not ancho
+se waters we must not anchor here , However welcome the hospitality that surrou
+and pass it , To conceive no time , however distant , but what you may reach it
+ut it stretches and waits for you , however long but it stretches and waits for
+ , planets , All distances of place however wide , All distances of time , all 
+hou wouldst not really sell thyself however great the price , In that thou sure
+im recesses , Acknowledging rapport however far remov ' d , ( As some old root 
+n to its divine source and origin , however distant , Latent the same in subjec
+
+
