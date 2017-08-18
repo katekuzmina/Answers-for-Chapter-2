@@ -2,7 +2,7 @@
 # Natural Language Processing with Python 
 ## Answers for Chapter 2 
 
-__Question 1__: 
+__Question 1__
 Create a variable phrase containing a list of words. Review the operations described in the previous chapter, including addition, multiplication, indexing, slicing, and sorting.
 
 
@@ -37,7 +37,7 @@ phrase_sort = sorted(w.lower() for w in phrase)
 phrase_sort
     ['a', 'before', 'beginner', 'ended', 'house', 'shines', 'the']
 ```
-__Question 2__: 
+__Question 2__
 Use the corpus module to explore austen-persuasion.txt. How many word tokens does this book have? How many word types?
 
 ```python
@@ -56,7 +56,7 @@ persuasion_wt = sorted(set(w.lower() for w in persuasion_tokens))
 len(persuasion_wt)
     7344
 ```
-__Question 3__: 
+__Question 3__
 Use the Brown corpus reader nltk.corpus.brown.words() or the Web text corpus reader nltk.corpus.webtext.words() to access some sample text in two different genres.
 
 ```python
@@ -85,7 +85,7 @@ print brown.sents(categories = 'romance')[2:3]
     [[u'The', u'Old', u'Man', u'was', u'unimportant', u'.']]
 ```
 
-__Question 4__: 
+__Question 4__
 Read in the texts of the State of the Union addresses, using the state_union corpus reader. Count occurrences of men, women, and people in each document. What has happened to the usage of these words over time?
 
 ```python
@@ -117,7 +117,7 @@ cfd = nltk.ConditionalFreqDist(
 
     TypeError: 'PlaintextCorpusReader' object is not callable
 ```
-__Question 5__: 
+__Question 5__
 Investigate the holonym-meronym relations for some nouns. Remember that there are three kinds of holonym-meronym relation, so you need to use: member_meronyms(), part_meronyms(), substance_meronyms(), member_holonyms(), part_holonyms(), and substance_holonyms().
 
 ```python
@@ -174,7 +174,7 @@ wn.synset('homo.n.02').substance_meronyms()
 wn.synset('homo.n.02').member_holonyms()
     [Synset('genus_homo.n.01')]
 ```
-__Question 6__: 
+__Question 6__
 In the discussion of comparative wordlists, we created an object called translate which you could look up using words in both German and Spanish in order to get corresponding words in English. What problem might arise with this approach? Can you suggest a way to avoid this problem?
 
 ```python
@@ -193,7 +193,7 @@ translate['dog']
 ```
 __ANSWER__: The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
 
-__Question 7__: 
+__Question 7__ 
 According to Strunk and White's Elements of Style, the word however, used at the start of a sentence, means "in whatever way" or "to whatever extent", and not "nevertheless". They give this example of correct usage: However you advise him, he will probably do as he thinks best. (http://www.bartleby.com/141/strunk3.html) Use the concordance tool to study actual usage of this word in the various texts we have been considering. See also the LanguageLog posting "Fossilized prejudices about 'however'" at http://itre.cis.upenn.edu/~myl/languagelog/archives/001913.html
 
 ```python
@@ -226,7 +226,7 @@ text.concordance("however")
 __ANSWER__: 
 From this analysis, we can see that Lewis Carroll often used "however" in the sentence-initial position that might be considered innovative and unique for a book written in 1865. 
 
-__Question 8__: 
+__Question 8__
 Define a conditional frequency distribution over the Names corpus that allows you to see which initial letters are more frequent for males vs. females
 ```python
 from nltk.corpus import names
