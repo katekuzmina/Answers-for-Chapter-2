@@ -201,7 +201,7 @@ translate['dog']
     ----> 1 translate['dog']
     KeyError: 'dog'
 ```
-__ANSWER__:The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
+__ANSWER__: The problem is that we cannot translate from English into other languages. How to solve it - I do not know at this moment.
 
 ## _Question 7_
 
@@ -234,4 +234,4 @@ e , and were resting in the shade : however , the moment they saw her , they hu
 ght as well be at school at once .' However , she got up , and began to repeat 
 age knew the meaning of it at all . However , ' jury - men ' would have done ju
 ```
-__ANSWER__:From this analysis, we can see that Lewis Carroll often used "however" in the sentence-initial position that might be considered innovative and unique for a book written in 1865. 
+__ANSWER__: From this analysis, we can see that Lewis Carroll often used "however" in the sentence-initial position that might be considered innovative and unique for a book written in 1865. 
